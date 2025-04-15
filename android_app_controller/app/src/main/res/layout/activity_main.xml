@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rashintha.opensource.bluetoothrccarcontroller.MainActivity"
+    android:background="#000">
+
+    <TextView
+        android:id="@+id/tvMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RC CAR"
+        android:textColor="#FFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <ImageButton
+        android:id="@+id/btnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/rc_stop"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/btnAutonomous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="#FFF"
+        android:text="AUTO"/>
+
+    <TextView
+        android:id="@+id/btnManual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="270dp"
+        android:textColor="#FFF"
+        android:text="MANUAL"/>
+
+    <TextView
+        android:id="@+id/btnGyro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="160dp"
+        android:textColor="#FFF"
+        android:text="GYRO"/>
+
+    <TextView
+        android:id="@+id/btnSoundDetect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="570dp"
+        android:layout_marginLeft="130dp"
+        android:textColor="#FFF"
+        android:text="SOUND DETECT"/>
+
+
+
+    <ImageButton
+        android:id="@+id/btnUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btnStop"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/rc_up_arrow"
+        android:layout_marginBottom="30dp"/>
+
+    <ImageButton
+        android:id="@+id/btnDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnStop"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/rc_down_arrow"
+        android:layout_marginTop="30dp"/>
+
+    <ImageButton
+        android:id="@+id/btnLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/btnStop"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/rc_left_arrow"
+        android:layout_marginEnd="30dp"/>
+
+    <ImageButton
+        android:id="@+id/btnRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/btnStop"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/rc_right_arrow"
+        android:layout_marginStart="30dp"/>
+
+
+    <ImageButton
+        android:id="@+id/btnBluetoothEnable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bluetooth_enable"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"/>
+
+    <ImageButton
+        android:id="@+id/btnMusic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@mipmap/ic_song_bitmap_24"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="280dp"/>
+
+    <ImageButton
+        android:id="@+id/btnBluetoothConnect"
+        android:layout_toStartOf="@id/btnBluetoothEnable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bluetooth_connect"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:layout_marginEnd="40dp"/>
+
+    <ImageButton
+        android:id="@+id/btnBluetoothDisconnect"
+        android:layout_toEndOf="@id/btnBluetoothEnable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bluetooth_disconnect"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="35dp"
+        android:layout_marginStart="40dp"/>
+</RelativeLayout>

@@ -1,0 +1,109 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Nov 21 11:55:17 2024
+| Host         : DESKTOP-UE4BBH7 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_rc_car_control_sets_placed.rpt
+| Design       : top_rc_car
+| Device       : xc7s25
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    31 |
+|    Minimum number of control sets                        |    31 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   109 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    31 |
+| >= 0 to < 4        |     6 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     3 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    14 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               4 |            3 |
+| No           | No                    | Yes                    |             188 |           48 |
+| No           | Yes                   | No                     |              28 |           13 |
+| Yes          | No                    | No                     |             232 |           92 |
+| Yes          | No                    | Yes                    |             225 |           48 |
+| Yes          | Yes                   | No                     |             470 |          173 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------------+--------------------------------------------------+--------------------------------------------------------+------------------+----------------+--------------+
+|                  Clock Signal                 |                   Enable Signal                  |                    Set/Reset Signal                    | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------------------------+--------------------------------------------------+--------------------------------------------------------+------------------+----------------+--------------+
+|  drive_inst/last_right_sensor_reg_LDC_i_1_n_0 |                                                  | drive_inst/last_right_sensor_reg_LDC_i_2_n_0           |                1 |              1 |         1.00 |
+|  drive_inst/last_left_sensor_reg_LDC_i_1_n_0  |                                                  | drive_inst/last_left_sensor_reg_LDC_i_2_n_0            |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                | drive_inst/last_left_sensor                      | drive_inst/last_right_sensor_reg_LDC_i_2_n_0           |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                | drive_inst/last_left_sensor                      | drive_inst/last_left_sensor_reg_LDC_i_2_n_0            |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                | drive_inst/last_left_sensor                      | drive_inst/last_right_sensor_reg_LDC_i_1_n_0           |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                | drive_inst/last_left_sensor                      | drive_inst/last_left_sensor_reg_LDC_i_1_n_0            |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                                |                                                  |                                                        |                3 |              4 |         1.33 |
+|  clk_IBUF_BUFG                                | uart_inst/MYUART/URX/baudgen0/E[0]               | uart_inst/MYUART/URX/clear                             |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                                | uart_inst/MYUART/URX/FSM_onehot_state[3]_i_1_n_0 | rst_IBUF                                               |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                                | uart_inst/MYUART/UTX/BAUD0/E[0]                  | uart_inst/MYUART/UTX/bitc[3]_i_1_n_0                   |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                                |                                                  | uart_inst/MYUART/UTX/BAUD0/divcounter[9]_i_1_n_0       |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG                                |                                                  | uart_inst/MYUART/URX/baudgen0/divcounter[9]_i_1__0_n_0 |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG                                | uart_inst/MYUART/UTX/BAUD0/shifter1_in[0]        | rst_IBUF                                               |                1 |              7 |         7.00 |
+|  clk_IBUF_BUFG                                | uart_inst/MYUART/URX/load                        | rst_IBUF                                               |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                | uart_inst/MYUART/UTX/data_r[7]_i_1_n_0           |                                                        |                1 |              8 |         8.00 |
+|  clk_IBUF_BUFG                                | uart_inst/MYUART/URX/baudgen0/E[0]               |                                                        |                2 |              9 |         4.50 |
+|  clk_IBUF_BUFG                                | drive_inst/speed_left_a[7]_i_1_n_0               | rst_IBUF                                               |                5 |             10 |         2.00 |
+|  clk_IBUF_BUFG                                | music_inst/tone_counter[15]_i_1_n_0              | rst_IBUF                                               |                3 |             16 |         5.33 |
+|  clk_IBUF_BUFG                                | music_inst/current_note[15]_i_1_n_0              | rst_IBUF                                               |                5 |             22 |         4.40 |
+|  clk_IBUF_BUFG                                | drive_inst/debounce_timer                        | rst_IBUF                                               |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG                                | music_inst/selected_durations[0][21]_i_2_n_0     | uart_inst/store_value_reg[0]_rep__0_20                 |               14 |             32 |         2.29 |
+|  clk_IBUF_BUFG                                | music_inst/selected_durations[0][21]_i_2_n_0     | uart_inst/store_value_reg[0]_rep_36                    |               14 |             37 |         2.64 |
+|  clk_IBUF_BUFG                                | music_inst/selected_durations[0][21]_i_2_n_0     | uart_inst/store_value_reg[0]_rep_35                    |               19 |             42 |         2.21 |
+|  clk_IBUF_BUFG                                | music_inst/selected_durations[0][21]_i_2_n_0     | uart_inst/store_value_reg[0]_rep_34                    |               18 |             45 |         2.50 |
+|  clk_IBUF_BUFG                                |                                                  | rst_IBUF                                               |               25 |             63 |         2.52 |
+|  clk_IBUF_BUFG                                | music_inst/selected_durations[0][21]_i_2_n_0     | uart_inst/store_value_reg[0]_rep__0_22                 |               31 |             85 |         2.74 |
+|  clk_IBUF_BUFG                                | music_inst/selected_durations[0][21]_i_2_n_0     | uart_inst/store_value_reg[1]_20                        |               32 |            100 |         3.12 |
+|  clk_IBUF_BUFG                                | music_inst/selected_durations[0][21]_i_2_n_0     | uart_inst/store_value_reg[0]_rep__0_21                 |               39 |            102 |         2.62 |
+|  rcv                                          |                                                  | rst_IBUF                                               |               30 |            139 |         4.63 |
+|  clk_IBUF_BUFG                                | uart_inst/buffer_tmp_0                           | rst_IBUF                                               |               23 |            141 |         6.13 |
+|  clk_IBUF_BUFG                                | music_inst/selected_durations[0][21]_i_2_n_0     |                                                        |               89 |            215 |         2.42 |
++-----------------------------------------------+--------------------------------------------------+--------------------------------------------------------+------------------+----------------+--------------+
+
+

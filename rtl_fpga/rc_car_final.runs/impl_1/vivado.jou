@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Nov 21 11:54:52 2024
+# Process ID: 23260
+# Current directory: C:/digital_circuit_idc/rc_car_final_2/rc_car_final.runs/impl_1
+# Command line: vivado.exe -log top_rc_car.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_rc_car.tcl -notrace
+# Log file: C:/digital_circuit_idc/rc_car_final_2/rc_car_final.runs/impl_1/top_rc_car.vdi
+# Journal file: C:/digital_circuit_idc/rc_car_final_2/rc_car_final.runs/impl_1\vivado.jou
+# Running On        :DESKTOP-UE4BBH7
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :Intel(R) Core(TM) Ultra 5 125H
+# CPU Frequency     :2995 MHz
+# CPU Physical cores:14
+# CPU Logical cores :18
+# Host memory       :16739 MB
+# Swap memory       :7639 MB
+# Total Virtual     :24379 MB
+# Available Virtual :7884 MB
+#-----------------------------------------------------------
+source top_rc_car.tcl -notrace

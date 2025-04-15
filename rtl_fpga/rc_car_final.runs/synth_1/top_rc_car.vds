@@ -1,0 +1,388 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Thu Nov 21 11:53:59 2024
+# Process ID: 16324
+# Current directory: C:/digital_circuit_idc/rc_car_final_2/rc_car_final.runs/synth_1
+# Command line: vivado.exe -log top_rc_car.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_rc_car.tcl
+# Log file: C:/digital_circuit_idc/rc_car_final_2/rc_car_final.runs/synth_1/top_rc_car.vds
+# Journal file: C:/digital_circuit_idc/rc_car_final_2/rc_car_final.runs/synth_1\vivado.jou
+# Running On        :DESKTOP-UE4BBH7
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :Intel(R) Core(TM) Ultra 5 125H
+# CPU Frequency     :2995 MHz
+# CPU Physical cores:14
+# CPU Logical cores :18
+# Host memory       :16739 MB
+# Swap memory       :7639 MB
+# Total Virtual     :24379 MB
+# Available Virtual :7944 MB
+#-----------------------------------------------------------
+source top_rc_car.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 531.113 ; gain = 199.543
+Command: read_checkpoint -auto_incremental -incremental C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/utils_1/imports/synth_1/rc_car.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/utils_1/imports/synth_1/rc_car.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top_rc_car -part xc7s25csga225-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7s25'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s25'
+INFO: [Device 21-403] Loading part xc7s25csga225-1
+INFO: [Device 21-9227] Part: xc7s25csga225-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 34408
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1367.480 ; gain = 447.812
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-10940] macro 'B230400' is redefined [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/UART_RX.v:4]
+WARNING: [Synth 8-10940] macro 'B115200' is redefined [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/UART_RX.v:5]
+WARNING: [Synth 8-10940] macro 'B9600' is redefined [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/UART_RX.v:6]
+INFO: [Synth 8-6157] synthesizing module 'top_rc_car' [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/top_rc_car.v:1]
+INFO: [Synth 8-6157] synthesizing module 'uart_controller' [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/uart_controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'UART' [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/UART.v:1]
+INFO: [Synth 8-6157] synthesizing module 'UART_TX' [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/UART_TX.v:44]
+INFO: [Synth 8-6157] synthesizing module 'BAUDGEN_TX' [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/BAUDGEN_TX.v:52]
+	Parameter BAUDRATE bound to: 1250 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'BAUDGEN_TX' (0#1) [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/BAUDGEN_TX.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'UART_TX' (0#1) [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/UART_TX.v:44]
+INFO: [Synth 8-6157] synthesizing module 'UART_RX' [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/UART_RX.v:8]
+INFO: [Synth 8-6157] synthesizing module 'BAUDGEN_RX' [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/BAUDGEN_RX.v:25]
+	Parameter BAUDRATE bound to: 1250 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'BAUDGEN_RX' (0#1) [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/BAUDGEN_RX.v:25]
+INFO: [Synth 8-226] default block is never used [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/UART_RX.v:101]
+INFO: [Synth 8-6155] done synthesizing module 'UART_RX' (0#1) [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/UART_RX.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'UART' (0#1) [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/UART.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'uart_controller' (0#1) [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/uart_controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'pwm_controller' [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/pwm_controller.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'pwm_controller' (0#1) [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/pwm_controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'driving_mode_controller' [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/driving_mode_controller.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/driving_mode_controller.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'driving_mode_controller' (0#1) [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/driving_mode_controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'music_controller' [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'music_controller' (0#1) [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:1]
+INFO: [Synth 8-6157] synthesizing module 'fire_detector' [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/fire_detector.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'fire_detector' (0#1) [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/fire_detector.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top_rc_car' (0#1) [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/top_rc_car.v:1]
+WARNING: [Synth 8-6014] Unused sequential element state_reg was removed.  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/driving_mode_controller.v:86]
+WARNING: [Synth 8-7137] Register last_left_sensor_reg in module driving_mode_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/driving_mode_controller.v:92]
+WARNING: [Synth 8-7137] Register last_right_sensor_reg in module driving_mode_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/driving_mode_controller.v:93]
+WARNING: [Synth 8-6014] Unused sequential element selected_song_reg was removed.  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:172]
+WARNING: [Synth 8-7137] Register selected_melody_reg[0] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[1] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[2] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[3] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[4] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[5] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[6] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[7] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[8] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[9] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[10] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[11] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[12] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[13] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[14] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[15] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[16] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[17] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[18] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[19] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[20] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[21] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[22] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[23] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[24] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[25] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[26] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[27] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[28] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[29] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[30] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_melody_reg[31] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:182]
+WARNING: [Synth 8-7137] Register selected_durations_reg[0] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[1] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[2] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[3] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[4] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[5] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[6] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[7] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[8] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[9] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[10] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[11] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[12] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[13] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[14] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[15] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[16] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[17] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[18] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[19] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[20] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[21] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[22] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[23] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[24] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[25] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[26] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[27] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[28] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[29] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[30] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+WARNING: [Synth 8-7137] Register selected_durations_reg[31] in module music_controller has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/music_controller.v:183]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1490.066 ; gain = 570.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1490.066 ; gain = 570.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1490.066 ; gain = 570.398
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Netlist 29-72] Incorrect value '2'b10' specified for property 'KEEP'. Expecting type 'string' with possible values of 'true,false,yes,no,1,0'. The system will either use the default value or the property value will be dropped. Please verify your source files. [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/sources_1/new/top_rc_car.v:28]
+Resolution: Please check the value of the property and set to a correct value.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1490.066 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/constrs_1/new/rc_car.xdc]
+Finished Parsing XDC File [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/constrs_1/new/rc_car.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/digital_circuit_idc/rc_car_final_2/rc_car_final.srcs/constrs_1/new/rc_car.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_rc_car_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_rc_car_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1592.148 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1592.148 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1592.148 ; gain = 672.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7s25csga225-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1592.148 ; gain = 672.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1592.148 ; gain = 672.480
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'UART_TX'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'UART_RX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                   START |                              010 |                               01
+                   TRANS |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'UART_TX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                               00
+                    RECV |                             0010 |                               01
+                    LOAD |                             0100 |                               10
+                     DAV |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'UART_RX'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1592.148 ; gain = 672.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   24 Bit       Adders := 1     
+	   2 Input   16 Bit       Adders := 2     
+	   2 Input   11 Bit       Adders := 2     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 2     
++---Registers : 
+	              128 Bit    Registers := 2     
+	               24 Bit    Registers := 33    
+	               16 Bit    Registers := 34    
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 9     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	   4 Input  128 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 34    
+	   5 Input   24 Bit        Muxes := 32    
+	   2 Input   16 Bit        Muxes := 36    
+	   5 Input   16 Bit        Muxes := 32    
+	   2 Input   11 Bit        Muxes := 4     
+	   2 Input   10 Bit        Muxes := 3     
+	   4 Input   10 Bit        Muxes := 1     
+	   3 Input   10 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 27    
+	   3 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 7     
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 90 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1592.148 ; gain = 672.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:24 . Memory (MB): peak = 1592.148 ; gain = 672.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:29 . Memory (MB): peak = 1592.148 ; gain = 672.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:29 . Memory (MB): peak = 1609.105 ; gain = 689.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 1609.105 ; gain = 689.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 1609.105 ; gain = 689.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 1609.105 ; gain = 689.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 1609.105 ; gain = 689.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 1609.105 ; gain = 689.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 1609.105 ; gain = 689.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    30|
+|3     |LUT1   |     4|
+|4     |LUT2   |   503|
+|5     |LUT3   |   399|
+|6     |LUT4   |   223|
+|7     |LUT5   |   128|
+|8     |LUT6   |   546|
+|9     |FDCE   |   329|
+|10    |FDPE   |    83|
+|11    |FDRE   |   303|
+|12    |FDSE   |   429|
+|13    |LDC    |     2|
+|14    |IBUF   |     8|
+|15    |OBUF   |     9|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 1609.105 ; gain = 689.438
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:31 . Memory (MB): peak = 1609.105 ; gain = 587.355
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 1609.105 ; gain = 689.438
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1609.105 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1609.977 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LDC => LDCE: 2 instances
+
+Synth Design complete | Checksum: 54fca849
+INFO: [Common 17-83] Releasing license: Synthesis
+50 Infos, 72 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:37 . Memory (MB): peak = 1609.977 ; gain = 1071.477
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1609.977 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/digital_circuit_idc/rc_car_final_2/rc_car_final.runs/synth_1/top_rc_car.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_rc_car_utilization_synth.rpt -pb top_rc_car_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 21 11:54:45 2024...
