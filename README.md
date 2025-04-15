@@ -1,6 +1,6 @@
 # 🚗 FPGA-Based Autonomous RC Car
 
-An autonomous RC car project built using an FPGA board(Xilinx CMOS-S7) and multiple sensors. The car supports both automatic and manual driving modes and can be fully controlled via a Bluetooth-connected Android smartphone.
+An autonomous RC car project built using an FPGA board(Xilinx CMOD-S7) and multiple sensors. The car supports both automatic and manual driving modes and can be fully controlled via a Bluetooth-connected Android smartphone.
 
 ## 📱 Key Features
 
