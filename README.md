@@ -31,7 +31,7 @@ An autonomous RC car project built using an FPGA board(Xilinx CMOD-S7) and multi
 
 ## 🛠️ Hardware Components
 
-- FPGA Board (Xilinx CMOS S7)
+- FPGA Board (Xilinx CMOD S7)
 - Tracker & Avoid Sensor
 - Bluetooth Module (HC-05)
 - Buzzer
