@@ -24,7 +24,8 @@ This project is a great demonstration of how **mobile app development, embedded 
 ## 📸 Demo
 
 ![image](https://github.com/user-attachments/assets/3c96adec-5f59-4ca2-ba17-af8ae95bb72e)
-![image](https://github.com/user-attachments/assets/f2e2871d-3de2-4a5c-a44d-ef006d63e8c1)
+![image](https://github.com/user-attachments/assets/ad569ff5-c074-440e-80de-10bedcba91f9)
+
 
 
 ## 📱 Key Features
