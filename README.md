@@ -21,6 +21,11 @@ This project implements a **fully software-driven autonomous RC car system** con
 
 This project is a great demonstration of how **mobile app development, embedded systems, and digital logic design** can be fused together into a single, cohesive real-time control system.
 
+## 📸 Demo
+
+![image](https://github.com/user-attachments/assets/3c96adec-5f59-4ca2-ba17-af8ae95bb72e)
+![image](https://github.com/user-attachments/assets/f2e2871d-3de2-4a5c-a44d-ef006d63e8c1)
+
 
 ## 📱 Key Features
 
@@ -69,8 +74,4 @@ This project is a great demonstration of how **mobile app development, embedded 
 - `music_inst`: Generates music signals
 - `fire_inst`: Handles fire/emergency detection
 
-## 📸 Demo
-
-![image](https://github.com/user-attachments/assets/3c96adec-5f59-4ca2-ba17-af8ae95bb72e)
-![image](https://github.com/user-attachments/assets/4e5c6183-2e3c-492f-9a5f-cdb0362140ab)
 
