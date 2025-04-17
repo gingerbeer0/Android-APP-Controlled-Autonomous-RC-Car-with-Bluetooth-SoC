@@ -1,6 +1,26 @@
-# 🚗 FPGA-Based Autonomous RC Car
+# Android-APP-Controlled-Autonomous-RC-Car-with-Bluetooth-SoC
 
-An autonomous RC car project built using an FPGA board(Xilinx CMOD-S7) and multiple sensors. The car supports both automatic and manual driving modes and can be fully controlled via a Bluetooth-connected Android smartphone.
+This project implements a **fully software-driven autonomous RC car system** controllable via a **custom Android application**, leveraging Bluetooth communication and FPGA-based logic control. Unlike traditional hardware-centric RC systems, this project highlights a strong **software-defined control architecture** where real-time decisions and motion commands originate from the Android layer.
+
+## 🚀 Key Highlights
+
+- 📱 **Android-App Integration**  
+  A custom-built Android application provides an intuitive UI/UX to control the car's movement, speed, and behavior modes. The app communicates via **Bluetooth (HC-05 module)** and sends directional commands in real-time.
+
+- 🧠 **Software-Centric Architecture**  
+  The vehicle logic is designed with a **software-first approach**, where the **state machine**, **manual override**, and **autonomous behaviors** are triggered and managed through a well-defined **protocol interface** between app and car.
+
+- 🔄 **Real-Time Mode Switching**  
+  Modes such as "manual", "auto-tracking", and "obstacle-avoidance" can be switched directly from the app, reflecting instantly on the FPGA-based controller.
+
+- 💡 **Bluetooth SoC Communication Layer**  
+  The project includes a reliable, debounced, and low-latency communication stack between Android and the car using a serial Bluetooth protocol, enabling continuous software interaction without hardware interruptions.
+
+- 🧩 **Modular Design for Scalability**  
+  The system is designed with **modular Verilog blocks and software modules**, making it scalable for future AI integration, sensor fusion, or mapping logic.
+
+This project is a great demonstration of how **mobile app development, embedded systems, and digital logic design** can be fused together into a single, cohesive real-time control system.
+
 
 ## 📱 Key Features
 
